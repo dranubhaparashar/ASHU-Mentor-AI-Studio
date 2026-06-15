@@ -1,4 +1,4 @@
-<img width="1535" height="1024" alt="ASHU" src="https://github.com/user-attachments/assets/e0778e7e-4098-4ee1-92b4-850a1c4a76ec" />
+
 # ASHU Mentor AI Studio
 
 **ASHU Mentor AI Studio** is a local-first AI interview, evaluation, and adaptive training platform that combines resume-aware questioning, job-description-aware interview simulation, candidate performance capture, adaptive training recommendations, consent-based voice generation, and digital-human lecture rendering.
@@ -30,6 +30,7 @@ ASHU Mentor AI Studio helps users conduct structured interview practice, evaluat
 
 The platform is designed for local execution, controlled experimentation, interview coaching, candidate readiness assessment, and AI training demonstrations.
 
+<img width="1535" height="1024" alt="ASHU" src="https://github.com/user-attachments/assets/e0778e7e-4098-4ee1-92b4-850a1c4a76ec" />
 ---
 
 ## Key Features
