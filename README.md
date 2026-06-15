@@ -7,6 +7,22 @@
 
 ---
 
+## Demo & Live App
+
+<p align="center">
+  <a href="https://youtu.be/2XXnTbtjREs">
+    <img src="https://img.shields.io/badge/Watch%20Demo-YouTube-red?style=for-the-badge&logo=youtube" alt="Watch Demo on YouTube" />
+  </a>
+  <a href="https://huggingface.co/spaces/AnubhaParashar/ASHU">
+    <img src="https://img.shields.io/badge/Try%20Live%20App-Hugging%20Face-yellow?style=for-the-badge&logo=huggingface" alt="Try Live App on Hugging Face" />
+  </a>
+</p>
+
+- **Video walkthrough:** [Watch ASHU Mentor AI Studio demo on YouTube](https://youtu.be/2XXnTbtjREs)
+- **Live interactive app:** [Try ASHU Mentor AI Studio on Hugging Face Spaces](https://huggingface.co/spaces/AnubhaParashar/ASHU)
+
+---
+
 ## Project Summary
 
 ASHU Mentor AI Studio helps users conduct structured interview practice, evaluate candidate responses, generate personalized learning plans, and deliver training through a digital-human teaching assistant. The system supports resume/JD-based question generation, coding-round evaluation, face-to-face probing, candidate evidence capture, and AI-generated lecture videos using an authorized presenter and voice sample.
@@ -28,7 +44,7 @@ The platform is designed for local execution, controlled experimentation, interv
 - Full background voice + video rendering pipeline
 - Cached lecture prefetching to avoid repeated slow rendering
 - Browser-safe MP4 conversion for embedded playback
-- YouTube-style assistant video player
+- Interactive assistant video player with playback controls
 - Downloadable final lecture video with generated audio
 - Candidate evidence, transcript, and report export support
 - Technical architecture diagrams inside the app
@@ -53,7 +69,7 @@ flowchart LR
     AUDIO --> RENDER[SadTalker / Wav2Lip Renderer]
     RENDER --> MP4[Generated Lecture MP4]
     MP4 --> SAFE[Browser-Safe MP4]
-    SAFE --> PLAYER[YouTube-Style Teaching Assistant Player]
+    SAFE --> PLAYER[Interactive Teaching Assistant Player]
 
     CAP --> EVID[Evidence Store]
     EV --> REPORT[Candidate Report]
@@ -157,17 +173,22 @@ Recommended workflow:
 
 ---
 
-## Hugging Face Space
+## Hugging Face Space Deployment
 
-The project can be hosted as a Hugging Face Streamlit Space with a lightweight UI. Heavy local features such as SadTalker, Wav2Lip, Ollama, and XTTS may require additional setup or upgraded hardware.
+For Hugging Face deployment, keep the YAML configuration at the top of `README.md` and keep `requirements.txt` as a pure package list.
 
-Space link:
-
-```text
-https://huggingface.co/spaces/AnubhaParashar/ASHU
+```yaml
+---
+title: ASHU Mentor AI Studio
+emoji: 🎓
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: "1.25.0"
+app_file: app.py
+pinned: false
+---
 ```
-
-For Hugging Face deployment, `README.md` must contain the YAML Space configuration at the top, and `requirements.txt` must contain only package names.
 
 ---
 
@@ -210,21 +231,7 @@ ASHU Mentor AI Studio is intended for authorized and consent-based use only.
 
 ## GitHub Wiki
 
-The project wiki includes pages for:
-
-- Home
-- Demo & Live App
-- Architecture & Product Design
-- Complete Technical Specification
-- Training & Interview Workflow
-- Digital Presenter Voice & Lip-Sync Pipeline
-- Background Rendering & Cache Reuse
-- Feature Reference
-- Acceptance Criteria Mapping
-- Evidence Pack & Reporting
-- Security, Consent & Governance
-- Quick Links
-- About ASHU Mentor AI Studio
+The project wiki includes pages for Home, Demo & Live App, Architecture & Product Design, Complete Technical Specification, Training & Interview Workflow, Digital Presenter Voice & Lip-Sync Pipeline, Background Rendering & Cache Reuse, Feature Reference, Acceptance Criteria Mapping, Evidence Pack & Reporting, Security, Consent & Governance, Quick Links, and About ASHU Mentor AI Studio.
 
 ---
 
